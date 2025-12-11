@@ -1,0 +1,17 @@
+# .gitignore
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# File Python/Pytest Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Database Lokal
+bidhouse.db
+
+# Logs
+*.log
