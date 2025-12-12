@@ -6,3 +6,6 @@ https://bidhousebackend.onrender.com
 
 3. Link Dokumentasi API (Swagger UI):
 https://bidhousebackend.onrender.com/docs
+
+4. Link Dokumentasi Postman:
+https://bidhouse-6620.postman.co/workspace/a43f575f-a069-467b-8b99-d1c2b20f1848/collection/39862316-c59b47b4-8228-4e4b-92a9-abc54aaee82c
