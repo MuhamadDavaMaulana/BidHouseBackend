@@ -1,7 +1,6 @@
 # requirements.txt
 # Core Framework dan Server
 fastapi
-uvicorn
 
 # Database dan ORM
 sqlalchemy
