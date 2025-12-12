@@ -1,0 +1,8 @@
+1. Link Repository Source Code (GitHub):
+https://github.com/MuhamadDavaMaulana/BidHouseBackend.git
+
+2. Link Website Hasil Deploy (URL Publik API):
+https://bidhousebackend.onrender.com
+
+3. Link Dokumentasi API (Swagger UI):
+https://bidhousebackend.onrender.com/docs
