@@ -1,14 +1,12 @@
-# app/routers/users.py
 from datetime import timedelta
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from .. import crud, models, auth
-from ..database import SessionLocal # <-- PERBAIKAN: Impor SessionLocal
+from ..database import SessionLocal 
 
 router = APIRouter(tags=["Users & Authentication"])
 
-# Dependency DB (DIPERBAIKI)
 def get_db():
     db = SessionLocal() 
     try:
