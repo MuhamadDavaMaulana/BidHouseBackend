@@ -18,5 +18,5 @@ app.include_router(bids.router, prefix="/api")
 @app.get("/")
 def read_root():
     return {"message": "Welcome to BidHouse API. Go to /docs for the documentation.
-    Selamat Datang di BidHouse API. Silakan tambahkan /docs di URL untuk melanjutkan"}
+    Selamat Datang di BidHouse API. Silakan tambahkan /docs di URL untuk melanjutkan."}
     
