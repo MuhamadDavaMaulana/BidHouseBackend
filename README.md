@@ -1,8 +1,8 @@
-# 🏛️ BidHouse Auction API (FastAPI)
+#  BidHouse Auction API (FastAPI)
 
 Proyek ini adalah implementasi *backend* API untuk platform lelang modern, dikembangkan menggunakan **FastAPI** dan **SQLAlchemy (ORM)**. Fokus utama adalah pada integritas data waktu (UTC) dan alur autentikasi JWT standar.
 
-## 🏗️ Struktur Proyek
+##  Struktur Proyek
 
 API ini mengadopsi struktur modular untuk pemisahan tanggung jawab yang jelas:
 
@@ -100,7 +100,7 @@ Kami mengadopsi struktur aplikasi yang modular dengan pemisahan tanggung jawab y
 3.  **Otentikasi (JWT + Header):**
     * Token akses (JWT) dikelola dengan masa aktif **30 menit** dan dikirim via *Header* standar API.
 
-### ♻️ Modularitas dan Kejelasan Kode
+###  Modularitas dan Kejelasan Kode
 
 * **CRUD Layer:** Semua logika interaksi dengan database terisolasi di `app/crud.py`, memastikan *router* tetap bersih dan hanya menangani validasi *request* dan status HTTP.
 * **Dependencies FastAPI:** Memanfaatkan *Dependency Injection* (`Depends()`) untuk mengelola sesi database dan verifikasi pengguna, menjaga kode *endpoint* tetap deklaratif.
