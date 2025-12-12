@@ -1,16 +1,13 @@
-# app/models.py
 from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import Optional, List
 
-# --- User Schemas ---
 
 class UserBase(BaseModel):
     username: str
     is_admin: bool = False
 
 class UserCreate(UserBase):
-    # Field opsional ini tetap menjaga kualitas input, meski Argon2 tidak punya batasan 72 byte
     password: str = Field(..., min_length=8) 
 
 class UserInDB(UserBase):
@@ -19,16 +16,14 @@ class UserInDB(UserBase):
     class Config:
         from_attributes = True
 
-# --- Auth/Token Schemas ---
-
 class Token(BaseModel):
     access_token: str
     token_type: str = "bearer"
 
+
+
 class TokenData(BaseModel):
     username: Optional[str] = None
-
-# --- Item Schemas ---
 
 class ItemBase(BaseModel):
     name: str
@@ -54,8 +49,7 @@ class ItemInDB(ItemBase):
     
     class Config:
         from_attributes = True
-
-# --- Bid Schemas ---
+        
 
 class BidBase(BaseModel):
     item_id: int
